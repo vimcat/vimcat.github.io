@@ -1,6 +1,8 @@
 @import 'bootstrap/scss/bootstrap.scss';
-@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700);
+@import url(https://fonts.googleapis.com/css?family=Bangers);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Crafty+Girls);
+@import url(https://fonts.googleapis.com/css?family=Special+Elite);
 
 html {
   position: relative;
@@ -25,10 +27,24 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Cinzel Decorative', cursive;
+	font-family: 'Bangers', cursive;
 }
 
 .jumbotron {
 	background-color: #fff;
 	border: 1px solid #31b0d5;
+  text-align: center;
+}
+
+.crafty {
+  font-family: 'Crafty Girls', cursive;
+}
+
+.code {
+  font-family: 'Special Elite', cursive;
+}
+
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
 }
