@@ -7,7 +7,7 @@ script:
 - bundle exec jekyll build --trace
 - bundle exec htmlproof ./_site --disable-external
 after_success:
-- "chmod +x ./bin/automated"
+- "chmod +x ./bin/automated && ./bin/automated"
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
