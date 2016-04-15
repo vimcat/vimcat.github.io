@@ -5,7 +5,7 @@ install:
 - "./bin/setup"
 script:
 - bundle exec jekyll build --trace
-- bundle exec htmlproof ./_site
+- bundle exec htmlproof ./_site --disable-external
 after_success:
 - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "source" && "./bin/automated"
 env:
