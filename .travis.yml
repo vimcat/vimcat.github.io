@@ -7,7 +7,7 @@ script:
 - bundle exec jekyll build --trace
 - bundle exec htmlproof ./_site --disable-external
 after_success:
-- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "source" && "./bin/automated"
+- "./bin/automated"
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
